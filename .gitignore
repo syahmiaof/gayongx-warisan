@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.impeccable/
+*.log
+.vercel/
+.env*
+!.env.example
+
