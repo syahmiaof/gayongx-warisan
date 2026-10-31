@@ -1,68 +1,77 @@
 <div align="center">
+  <img src="public/branding/social-preview.png" alt="GAYONGX: WARISAN Social Banner Preview" width="100%" />
+
   <h1>GAYONGX: WARISAN</h1>
   <p><strong>A 2D Silat Action-Adventure Game Built with Phaser 3 & TypeScript</strong></p>
+
   <p>
-    <a href="https://gamegayongx-warisan.syahmiaof.my"><img src="https://img.shields.io/badge/Play-Live%20Demo-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="Play Game" /></a>
-    <a href="https://github.com/syahmiaof/gayongx-warisan"><img src="https://img.shields.io/badge/Source-GitHub-101713?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License" /></a>
-    <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Author" /></a>
+    <a href="https://gayongx-warisan.vercel.app"><img src="https://img.shields.io/badge/Play-Live_Demo-60E1B5?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Play Game" /></a>
+    <a href="https://github.com/syahmiaof/gayongx-warisan"><img src="https://img.shields.io/badge/Source-GitHub-60E1B5?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub Source" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-All_Rights_Reserved-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License All Rights Reserved" /></a>
+    <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-60E1B5?style=for-the-badge&logo=readme&logoColor=60E1B5&labelColor=101713" alt="Author syahmiaof" /></a>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Phaser_3-101713?style=for-the-badge&logo=html5&logoColor=60E1B5" alt="Phaser 3" />
+    <img src="https://img.shields.io/badge/TypeScript-101713?style=for-the-badge&logo=typescript&logoColor=60E1B5" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vite-101713?style=for-the-badge&logo=vite&logoColor=60E1B5" alt="Vite" />
+    <img src="https://img.shields.io/badge/HTML5_Canvas-101713?style=for-the-badge&logo=html5&logoColor=60E1B5" alt="HTML5 Canvas" />
+    <img src="https://img.shields.io/badge/Vitest-101713?style=for-the-badge&logo=vitest&logoColor=60E1B5" alt="Vitest" />
+    <img src="https://img.shields.io/badge/Vercel-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5" alt="Vercel" />
   </p>
 </div>
 
-![GAYONGX Warisan game](https://raw.githubusercontent.com/syahmiaof/syahmiaof/main/public/images/game-gayongx-warisan.png)
+---
 
-A self-contained Phaser 3, TypeScript, Vite and HTML5 Canvas demo. A fictional villager, Arif, explores a coastal kampung, trains with a dramatized portrayal of Meor Abdul Rahman and protects the jetty from unnamed intruders.
+## Overview
 
-> Historical dramatization. Dialogue, characters and events are presented as interactive fiction rather than documentary evidence.
+- **Functionality**: 2D action-adventure web game built in Phaser 3 and TypeScript dramatizing historical silat heritage, complete with custom frame-based hitbox mechanics, parry systems, and interactive storyline quests.
+- **Aesthetic Value**: Evocative retro pixel and canvas rendering paired with handcrafted heritage sprites, authentic combat soundscapes, and responsive mobile touch controls.
+- **Business Value**: Preserves cultural martial heritage through gamified educational interaction, engaging digital-native audiences with traditional silat techniques and historical lore.
 
-## Play
+A self-contained Phaser 3, TypeScript, Vite, and HTML5 Canvas demo. A fictional villager, Arif, explores a coastal kampung, trains with a dramatized portrayal of Meor Abdul Rahman, and protects the jetty from intruders.
 
-Desktop uses A/D, Shift, Space, J, K, L, Q, F, E, Enter and Escape. Mobile uses landscape touch controls. Sound begins after the first interaction. The pause menu includes sound and reduced-motion preferences.
+> **Historical Dramatization**: Dialogue, characters, and events are presented as interactive fiction rather than documentary evidence.
 
-## Chapter 1 Flow
+---
 
-1. 1942 opening and Pulau Sudong reveal.
-2. Kampung exploration and optional villager conversations.
-3. Six combat lessons covering combo, heavy attack, block, parry, dodge and takedown.
-4. Jetty encounter with guarded enemies.
-5. Closing mentor dialogue and chapter ending.
+## Gameplay & Controls
 
-## Run
+- **Desktop Controls**: A/D (Move), Shift (Sprint), Space (Jump), J (Attack), K (Heavy Attack), L (Block / Parry), Q (Dodge), F / E (Interact), Enter (Confirm), Escape (Pause).
+- **Mobile Touch Controls**: Landscape on-screen virtual joypad and combat action triggers with haptic-adapted feedback.
+- **Accessibility & Settings**: The pause menu includes audio balance toggles and reduced-motion preferences.
 
-Use Node.js 22.12 or newer.
+---
 
-```bash
-npm install
-npm run dev
-npm run build
-npm run preview
-```
+## Chapter 1 Narrative Flow
 
-No account, backend, database, API key or external runtime service is required.
+1. **1942 Prologue**: Opening cinematic reveal of Pulau Sudong heritage backdrop.
+2. **Kampung Exploration**: Interactive villager dialogues, local lore discovery, and cultural context.
+3. **Six Combat Lessons**: Progressive mechanics tutorials covering combo chaining, heavy strikes, blocking, parrying, dodging, and takedowns.
+4. **Jetty Defense**: Dynamic boss encounter against guarded intruders testing all learned martial techniques.
+5. **Epilogue**: Concluding mentor dialogue and chapter resolution.
 
-## Architecture
+---
 
-- Phaser scenes manage boot, menu, story, gameplay and ending.
-- Typed rules separate damage, guard, reach and combo logic.
-- Combat uses windup, active and recovery phases with input buffering.
-- Semantic DOM handles menus, HUD, dialogue and pause UI.
-- Canvas rendering supports the generated 2D art without a WebGL dependency.
-- Phaser FIT scaling preserves the 1280 × 720 game aspect ratio.
+## Technical Architecture
 
-## Status
+- **Phaser Scenes**: Modular state management across boot, menu, narrative cutscenes, gameplay arena, and victory screens.
+- **Combat Mechanics**: Discrete windup, active, and recovery phases with input buffering and deterministic frame-based hitboxes.
+- **Responsive Canvas Rendering**: Phaser FIT scaling ensures consistent 1280 × 720 game presentation across all mobile and desktop viewports without WebGL hardware requirements.
+- **Decoupled Rules Engine**: Independent damage calculation, guard metering, reach collision, and combo timers.
 
-Chapter 1 proof of concept. The complete gameplay loop is functional; later chapters and wider GayongX integration remain future work.
+---
 
-## Verification and Release
+## Continuous Integration & Quality
 
-The repository includes unit rules, browser playthroughs and release documentation. See `RELEASE.md` and `TESTING.md` for the deployment record and test procedures.
+Game stability is validated automatically through continuous testing workflows:
+- **Unit Verification**: Vitest test suite executing deterministic combat calculations, guard breaks, and state transition logic.
+- **Type Checking**: Strict TypeScript compiler checks ensuring zero runtime type regressions.
+- **Automated CI**: GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push and pull request to `main`.
 
-```bash
-npm test          # Run Vitest test suite
-npm run typecheck # Validate TypeScript types
-npm run build     # Production Vite build
-```
+---
 
-## Builder
+## License
 
-[Muhammad Syahmi](https://syahmiaof.my)
+Copyright (c) 2026 Muhammad Syahmi ([syahmiaof](https://syahmiaof.my)). All rights reserved.  
+Proprietary source code created solely for demonstration and portfolio showcase purposes.
