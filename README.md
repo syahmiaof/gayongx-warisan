@@ -1,7 +1,12 @@
 <div align="center">
   <h1>GAYONGX: WARISAN</h1>
-  <p><strong>A short 2D silat action-adventure about responsibility, training and heritage.</strong></p>
-  <p><a href="https://gamegayongx-warisan.syahmiaof.my">Play Chapter 1</a> · <a href="https://syahmiaof.my/projects">Portfolio</a></p>
+  <p><strong>A 2D Silat Action-Adventure Game Built with Phaser 3 & TypeScript</strong></p>
+  <p>
+    <a href="https://gamegayongx-warisan.syahmiaof.my"><img src="https://img.shields.io/badge/Play-Live%20Demo-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="Play Game" /></a>
+    <a href="https://github.com/syahmiaof/gayongx-warisan"><img src="https://img.shields.io/badge/Source-GitHub-101713?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License" /></a>
+    <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Author" /></a>
+  </p>
 </div>
 
 ![GAYONGX Warisan game](https://raw.githubusercontent.com/syahmiaof/syahmiaof/main/public/images/game-gayongx-warisan.png)
@@ -14,7 +19,7 @@ A self-contained Phaser 3, TypeScript, Vite and HTML5 Canvas demo. A fictional v
 
 Desktop uses A/D, Shift, Space, J, K, L, Q, F, E, Enter and Escape. Mobile uses landscape touch controls. Sound begins after the first interaction. The pause menu includes sound and reduced-motion preferences.
 
-## Chapter 1 flow
+## Chapter 1 Flow
 
 1. 1942 opening and Pulau Sudong reveal.
 2. Kampung exploration and optional villager conversations.
@@ -26,12 +31,12 @@ Desktop uses A/D, Shift, Space, J, K, L, Q, F, E, Enter and Escape. Mobile uses 
 
 Use Node.js 22.12 or newer.
 
-~~~bash
+```bash
 npm install
 npm run dev
 npm run build
 npm run preview
-~~~
+```
 
 No account, backend, database, API key or external runtime service is required.
 
@@ -48,9 +53,15 @@ No account, backend, database, API key or external runtime service is required.
 
 Chapter 1 proof of concept. The complete gameplay loop is functional; later chapters and wider GayongX integration remain future work.
 
-## Verification and release
+## Verification and Release
 
-The repository includes unit rules, browser playthroughs and release documentation. See RELEASE.md for the deployment record and current limitations.
+The repository includes unit rules, browser playthroughs and release documentation. See `RELEASE.md` and `TESTING.md` for the deployment record and test procedures.
+
+```bash
+npm test          # Run Vitest test suite
+npm run typecheck # Validate TypeScript types
+npm run build     # Production Vite build
+```
 
 ## Builder
 
